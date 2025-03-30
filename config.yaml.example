@@ -1,0 +1,21 @@
+# DuckDNS 配置
+domains:
+  - your-domain.duckdns.org
+token: your-duckdns-token
+
+# 可选：域名别名
+aliases: []
+
+# Let's Encrypt 配置
+lets_encrypt:
+  accept_terms: false  # 设置为 true 以使用 Let's Encrypt
+  algo: secp384r1     # 可选: rsa, prime256v1, secp384r1
+  certfile: fullchain.pem
+  keyfile: privkey.pem
+
+# 更新间隔（秒）
+seconds: 300
+
+# 可选：IP 地址配置
+ipv4: ""  # 留空使用自动检测，或指定 IP/URL
+ipv6: ""  # 留空使用自动检测，或指定 IP/URL 
